@@ -1,1 +1,17 @@
-<p>page-credit-main works!</p>
+<h1>{{title}}</h1>
+
+<p>
+	page-credit-main works!
+</p>
+
+<input type="text" placeholder="Type the heading..." [(ngModel)]="title">
+
+<div class="row" *ngFor="let user of userList">
+	<div class="col-md-6">{{user.userId}}</div>
+	<div class="col-md-6">{{user.mobile}}</div>
+</div>
+
+<div class="row" *ngFor="let acty of actyList">
+	<div class="col-md-6">{{acty.id}}</div>
+	<div class="col-md-6">{{acty.title}}</div>
+</div>
